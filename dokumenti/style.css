@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(206, 206, 206);
+  font-family: "Poppins", sans-serif;
+}
+/* Nav bar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(50, 50, 50);
+  height: 140px;
+  max-width: 100%;
+}
+header nav,
+.logo img {
+  padding: 1.4rem;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: white;
+}
+/* Animation header text underline */
+nav a {
+  display: inline-block;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* About us */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  width: 700px;
+  margin: 80px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.aboutUS {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 2.5rem;
+}
+.pic img {
+  height: 570px;
+  width: 500px;
+}
+/* Services */
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7.4rem;
+}
+.servicesNaslovWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.servicesNaslov {
+  margin-bottom: -150px;
+  font-size: 2.5rem;
+}
+.servicesSlika {
+  height: 100px;
+  width: 100px;
+}
+.servicesDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem;
+}
+.servicesDiv p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+/* Kontakt */
+.forma {
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contactText {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.contactText p {
+  /* width: 700px; */
+  text-align: center;
+  font-size: 1.2rem;
+}
+.contactText h1 {
+  font-size: 2.5rem;
+}
+
+.login-card {
+  background-color: #333;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 20px;
+  max-width: 400px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  margin: 3rem;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-header h1 {
+  font-size: 2em;
+  color: #ffffff;
+  text-shadow: 1px 1px #333;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.2em;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f0f0f0;
+  font-size: 1.2em;
+  color: #555;
+  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: cyan;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: cyan;
+}
+
+.login-button {
+  background-color: rgb(11, 184, 184);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 10px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  transition: 0.25s;
+}
+
+.login-button:hover {
+  background-color: #0069d9e7;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 105, 217, 1);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0, 105, 217, 1);
+  box-shadow: 0px 0px 30px 0px rgba(0, 105, 217, 1);
+}
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.footerDiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 850px) {
+  header {
+    display: block;
+    height: 400px;
+    max-width: 100%;
+  }
+  nav a {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .about {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .text {
+    width: 410px;
+  }
+  .pic img {
+    width: 370px;
+    height: 350px;
+  }
+  .services {
+    display: block;
+  }
+  .servicesDiv p {
+    width: 370px;
+  }
+  footer {
+    display: block;
+    max-width: 100%;
+  }
+}
